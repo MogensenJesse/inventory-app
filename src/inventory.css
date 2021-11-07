@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eee;
+  box-sizing: border-box;
+  font-family: 'Syne', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 5px;
+  box-shadow: 0px 30px 60px #00000029;
+}
+
+.input {
+  height: 3em;
+  border: 1px solid #00000029;
+  background-color: rgb(250, 250, 250);
+  border-radius: 3px 0 0 3px;
+  width: 35vw;
+  min-width: 500px;
+}
+
+.add {
+  height: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.add:hover {
+  opacity: 0.75;
+}
+
+.listItem {
+  padding: 1.5em 0.5em 1.5em 0.5em;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+}
+
+.counter {
+  width: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  height: 1.2em;
+  width: 1.2em;
+  border: none;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.min {
+  background-image: url(./images/minus.svg);
+}
+
+.plus {
+  background-image: url(./images/plus.svg);
+}
+
+.edit {
+  background-image: url(./images/edit.svg);
+  margin-right: 2em;
+}
+
+.del {
+  background-image: url(./images/trash.svg);
+  margin-right: 3em;
+}
+
