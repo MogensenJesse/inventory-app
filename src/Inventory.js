@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { nanoid } from "nanoid";
+import { v4 as uuidv4 } from "uuid";
 import ProductItem from "./components/Product";
 import "./reset.css";
 import "./inventory.css";
@@ -34,7 +34,7 @@ const Inventory = () => {
               setInputValue({ id: "", value: "" });
               return setProducts(NewProducts);
             }
-            const id = nanoid();
+            const id = uuidv4();
             const myProducts = [
               ...products,
               { id: id, value: inputValue.value },
